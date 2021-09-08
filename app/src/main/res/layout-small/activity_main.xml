@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="6"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="#00BCD4"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_weight="1.5">
+        <TextView
+            android:id="@+id/secondCountId"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:text="30s"
+            android:gravity="center"
+            android:background="#FFEB3B"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/gameInputId"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:text="10 + 30"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="#E91E63"
+            />
+        <TextView
+            android:id="@+id/gameScoreCountId"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:text="11/10"
+            android:textSize="10sp"
+            android:background="#FF9800"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn0"
+                android:background="#4CAF50"
+                android:onClick="checkAnswer"
+                android:tag="0"
+                android:text="14"
+                android:textSize="15sp"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#6FD7E4"
+                android:text="14"
+                android:textSize="15sp"
+                android:tag="1"
+                android:id="@+id/btn1"
+                android:onClick="checkAnswer"
+
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FF9800"
+
+                android:text="14"
+                android:textSize="15sp"
+                android:tag="2"
+                android:id="@+id/btn2"
+                android:onClick="checkAnswer"
+
+                />
+            <Button
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="3"
+                android:id="@+id/btn3"
+                android:background="#E91E63"
+                android:onClick="checkAnswer"
+                android:text="14"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+        <TextView
+            android:id="@+id/gameResultId"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Game is Running....."
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:background="#8BC34A"
+            android:fontFamily="casual"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Brain Trainer"
+        android:textSize="5sp"
+        android:id="@+id/actiionBartext"
+        />
+
+</LinearLayout>

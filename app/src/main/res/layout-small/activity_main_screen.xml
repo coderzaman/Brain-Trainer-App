@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#00BCD4"
+    android:padding="20dp"
+    tools:context=".MainScreenActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:text="Are you Ready? Hit Go Button For Start."
+        android:layout_marginBottom="10dp"
+        android:textColor="#fff"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        android:id="@+id/goBtn"
+        android:layout_width="wrap_content"
+        android:textSize="40sp"
+        android:text="Go"
+        android:background="#8BC34A"
+        android:textColor="#fff"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+</LinearLayout>
